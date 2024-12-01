@@ -5,7 +5,7 @@ import Contact from "../pages/Contact";
 import Projects from "../pages/Projects";
 export default function Home() {
   return (
-    <main className="flex flex-col bg-white row-start-2 items-center sm:items-start">
+    <main className="flex flex-col bg-[#00474d2c] row-start-2 items-center sm:items-start">
       
       <section id="home" className="w-full">
         <HomePage />
