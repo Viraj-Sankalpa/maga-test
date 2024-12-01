@@ -24,7 +24,7 @@ export default function MagaInBrief() {
   }, [inView1Trigger, inView2Trigger, inView3Trigger]);
 
   return (
-    <section className="min-h-screen text-white bg-[#00464d]">
+    <section className="min-h-screen text-white text-justify bg-[#00464d]">
       <section className="py-10 px-6">
         <motion.div
           className="container mx-auto text-center max-w-4xl"
@@ -132,7 +132,7 @@ export default function MagaInBrief() {
             viewport={{ once: false }}
           >
             <h2 className="text-4xl text-[#F0F0F0] font-bold">Mission</h2>
-            <p className="text-lg text-[#D9D9D9] leading-relaxed pb-16">
+            <p className="text-lg text-justify text-[#D9D9D9] leading-relaxed pb-16">
               Maga is driven by excellence and is committed to ensure the
               satisfaction of customer needs with utmost care by constantly
               providing quality products and services at affordable prices.
