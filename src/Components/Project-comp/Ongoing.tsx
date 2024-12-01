@@ -1,4 +1,6 @@
-'use client'
+"use client";
+
+import { motion } from "framer-motion";
 import Ongoing from "./ProjectCard";
 
 export default function OngoingProjectsList() {
@@ -7,7 +9,7 @@ export default function OngoingProjectsList() {
       imageSrc: "/images/projects/ongoing/1.jpg",
       title: "Galle Techno-Park",
       description:
-        "The Galle Techno-Park is located in the Galle District, close to the Southern Expressway Pinnaduwa interchange. Construction of the complex was envisioned by the Ministry of Information Technology in line with the National Policy Framework and the President’s vision. ",
+        "The Galle Techno-Park is located in the Galle District, close to the Southern Expressway Pinnaduwa interchange. Construction of the complex was envisioned by the Ministry of Information Technology in line with the National Policy Framework and the President’s vision.",
       linkText: "ACCESS TO THE PORTAL",
       linkHref: "#",
     },
@@ -15,7 +17,7 @@ export default function OngoingProjectsList() {
       imageSrc: "/images/projects/ongoing/2.jpg",
       title: "Malapalla Housing Complex",
       description:
-        "The project is a component of the government’s Railway Efficiency Improvement Project (REIP) and Colombo Suburban Railway Project (CSRP) implemented by the Ministry of Transport and funded by the Asian Development Bank (ADB). ",
+        "The project is a component of the government’s Railway Efficiency Improvement Project (REIP) and Colombo Suburban Railway Project (CSRP) implemented by the Ministry of Transport and funded by the Asian Development Bank (ADB).",
       linkText: "VIEW OUR PROJECTS",
       linkHref: "#",
     },
@@ -23,7 +25,7 @@ export default function OngoingProjectsList() {
       imageSrc: "/images/projects/ongoing/3.jpg",
       title: "Railway Operation HQ & Train Control Centre at Maradana",
       description:
-        "Construction of the new Railway Operation Headquarters (OH) and Train Control Centre (TCC) at Maradana are part of the government’s Railway Efficiency Improvement Project (REIP) and Colombo Suburban Railway Project (CSRP) implemented by the Ministry of Transport and funded by the Asian Development Bank (ADB). ",
+        "Construction of the new Railway Operation Headquarters (OH) and Train Control Centre (TCC) at Maradana are part of the government’s Railway Efficiency Improvement Project (REIP) and Colombo Suburban Railway Project (CSRP) implemented by the Ministry of Transport and funded by the Asian Development Bank (ADB).",
       linkText: "LEARN MORE",
       linkHref: "#",
     },
@@ -31,7 +33,7 @@ export default function OngoingProjectsList() {
       imageSrc: "/images/projects/ongoing/4.jpg",
       title: "Colombo-Kandy Road (A-1)",
       description:
-        "The project involves rehabilitation, improvement, and maintenance of a 14km section of the Colombo-Kandy (A-1) Highway. ",
+        "The project involves rehabilitation, improvement, and maintenance of a 14km section of the Colombo-Kandy (A-1) Highway.",
       linkText: "LEARN MORE",
       linkHref: "#",
     },
@@ -39,7 +41,7 @@ export default function OngoingProjectsList() {
       imageSrc: "/images/projects/ongoing/5.jpg",
       title: "Justice Akbar Mawatha & Uttarananda Mawatha Flyovers",
       description:
-        "The project involves Design and Construction of two flyovers in Slave Island (Colombo 02) along Justice Akbar Mawatha and Uttarananda Mawatha and a connecting flyover between the two. ",
+        "The project involves Design and Construction of two flyovers in Slave Island (Colombo 02) along Justice Akbar Mawatha and Uttarananda Mawatha and a connecting flyover between the two.",
       linkText: "LEARN MORE",
       linkHref: "#",
     },
@@ -49,15 +51,22 @@ export default function OngoingProjectsList() {
     <section className="py-8 px-6 bg-transparent">
       <div className="container mx-auto flex flex-col space-y-12">
         {projects.map((project, index) => (
-          <Ongoing
+          <motion.div
             key={index}
-            imageSrc={project.imageSrc}
-            title={project.title}
-            description={project.description}
-            linkText={project.linkText}
-            linkHref={project.linkHref}
-            reverse={index % 2 !== 0} 
-          />
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            <Ongoing
+              imageSrc={project.imageSrc}
+              title={project.title}
+              description={project.description}
+              linkText={project.linkText}
+              linkHref={project.linkHref}
+              reverse={index % 2 !== 0} // Alternate alignment
+            />
+          </motion.div>
         ))}
       </div>
     </section>
