@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <header className=" bg-[#00464d] fixed h-16 top-0 left-0 mb-4 w-full z-50">
+    <header className=" bg-[#00464d] fixed h-16 top-0 left-0 mb-4 w-screen z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Maga Logo */}
         <div className="relative left-1/2 transform -translate-x-1/2">
