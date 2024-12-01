@@ -26,7 +26,7 @@ export default function Contact() {
         >
           {/* Left Section */}
           <motion.div
-            className="bg-gray-300 shadow-lg rounded-lg p-8 md:w-1/2 flex relative"
+            className=" bg-gray-300 shadow-lg rounded-lg p-8 md:w-1/2 hidden md:flex relative "
             whileInView="visible"
             initial="hidden"
             variants={itemVariant}
@@ -34,7 +34,7 @@ export default function Contact() {
           >
             {/* Logo Section */}
             <motion.div
-              className="flex-shrink-0 flex items-center justify-center"
+              className="flex-shrink-0 flex items-center justify-center "
               whileInView="visible"
               initial="hidden"
               variants={itemVariant}
