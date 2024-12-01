@@ -32,7 +32,7 @@ export default function MagaInBrief() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-bold text-[#00464d] ml-4 mb-2 inline-block relative">
+          <h2 className="text-5xl font-bold text-[#00464d] ml-4 my-2 inline-block relative">
             About <span className="text-blue-600">Us</span>
             <span className="absolute left-0 bottom-[-8px] w-full h-[2px] bg-blue-600"></span>
           </h2>
@@ -104,6 +104,7 @@ export default function MagaInBrief() {
           {/* Trigger Point for Vision */}
           <div ref={ref2Trigger} className="h-4"></div>
 
+          <section id="vision-mission" >
           {/* Vision */}
           <motion.div
             className="space-y-2"
@@ -136,6 +137,7 @@ export default function MagaInBrief() {
               providing quality products and services at affordable prices.
             </p>
           </motion.div>
+          </section>
         </div>
 
         {/* Sticky Image */}
