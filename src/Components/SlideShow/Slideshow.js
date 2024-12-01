@@ -6,22 +6,22 @@ const Slideshow = () => {
     {
       id: 1,
       image: "/images/slideshow/slideshow 5.jpg",
-      caption: "Image 1",
+      caption: "Aster Residencies",
+    },
+    {
+      id: 2,
+      image: "/images/slideshow/slideshow 3.jpg",
+      caption: "Faculty of Computing and Technology, University of Kelaniya",
     },
     {
       id: 3,
-      image: "/images/slideshow/slideshow 3.jpg",
-      caption: "image 3",
+      image: "/images/slideshow/slideshow 4.jpg",
+      caption: "Le Grand Hotel, Galle",
     },
     {
       id: 4,
-      image: "/images/slideshow/slideshow 4.jpg",
-      caption: "image 4",
-    },
-    {
-      id: 5,
       image: "/images/slideshow/slideshow1.jpg",
-      caption: "image 5",
+      caption: "Sethsiripaya Stage III",
     },
 
   ];
