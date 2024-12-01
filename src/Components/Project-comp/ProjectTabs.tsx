@@ -14,7 +14,9 @@ export function ProjectTabs() {
       content: (
         <div className="pl-6 pt-6">
           <h2 className="text-3xl text-[#00464d] font-bold mb-2">Ongoing Projects</h2>
-          <Ongoing />
+          <section id="ongoing-projects">
+            <Ongoing />
+          </section>
         </div>
       ),
     },
@@ -24,7 +26,9 @@ export function ProjectTabs() {
       content: (
         <div className="pl-6 pt-6">
           <h2 className="text-3xl text-[#00464d] font-bold mb-2">Completed Projects</h2>
-          <Completed />
+          <section id="completed-projects">
+            <Completed />
+          </section>
         </div>
       ),
     },
