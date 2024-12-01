@@ -30,7 +30,7 @@ export default function ProjectCards({ imageSrc, title, description, linkText, l
       {/* Content */}
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-3xl font-bold text-[#00464d] mb-4">{title}</h2>
-        <p className="text-base text-white font-medium leading-relaxed mb-6">{description}</p>
+        <p className="text-base text-gray-600 font-medium leading-relaxed mb-6">{description}</p>
         <a
           href={linkHref}
           className="text-xs text-[#00464d] font-bold hover:underline inline-flex items-center"

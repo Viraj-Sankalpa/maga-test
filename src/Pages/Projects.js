@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Projects() {
   return (
-    <div>
+    <div className="mt-20">
       <section className="py-10 px-6">
         <motion.div
           className="container mx-auto text-center max-w-4xl"
