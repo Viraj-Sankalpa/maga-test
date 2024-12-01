@@ -57,7 +57,7 @@ export default function DetailsSection() {
           <h2 className="text-4xl font-bold text-[#00464d] ml-4 mb-4">
           Introduction <span className="text-blue-600"></span>
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed ml-4  mb-6 ">
+          <p className="text-justify text-lg text-gray-600 leading-relaxed ml-4  mb-6 pr-6 ">
             A synonym for quality, speed and care, Maga Engineering is one of
             the most trusted construction companies in South Asia, delivering
             high-quality buildings and infrastructure for over three decades.
@@ -67,7 +67,7 @@ export default function DetailsSection() {
             Lanka, its work has enriched all sectors of the economy, from
             healthcare and hospitality to transport and water supply.
           </p>
-          <p className="text-lg text-gray-600 leading-relaxed ml-4">
+          <p className="text-lg text-gray-600 leading-relaxed ml-4 pr-6 text-justify">
             In bringing to life over 500 multi-disciplinary projects, Maga has
             set global benchmarks in project delivery and sustainability, from
             completing one of the fastest Tsunami rehabilitation projects, to
