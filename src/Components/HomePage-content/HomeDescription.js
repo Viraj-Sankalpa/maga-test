@@ -87,7 +87,7 @@ export default function DetailsSection() {
           initial={{ opacity: 0, x: 50 }}
         >
           <Image
-            src="/images/HomeDescription/1pa.jpg" 
+            src="/images/HomeDescription/maga-one.jpg"
             alt="Construction"
             width={800}
             height={600}
