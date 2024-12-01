@@ -1,7 +1,14 @@
-'use client'
+'use client';
 import Image from "next/image";
 
-export default function ProjectCards({ imageSrc, title, description, linkText, linkHref, reverse }: {
+export default function ProjectCards({
+  imageSrc,
+  title,
+  description,
+  linkText,
+  linkHref,
+  reverse,
+}: {
   imageSrc: string;
   title: string;
   description: string;
@@ -12,12 +19,11 @@ export default function ProjectCards({ imageSrc, title, description, linkText, l
   return (
     <div
       className={`flex flex-col ${
-        reverse ? "md:flex-row-reverse" : "md:flex-row"
-      } items-center gap-8 py-8 `}
-      
+        reverse ? "md:flex-row-reverse justify-between" : "md:flex-row justify-between"
+      } items-center gap-8 py-8`}
     >
-
-      <div className="md:w-1/2">
+      {/* Image Section */}
+      <div className={`md:w-1/2 flex ${reverse ? "justify-end" : "justify-start"}`}>
         <Image
           src={imageSrc}
           alt={title}
@@ -27,10 +33,19 @@ export default function ProjectCards({ imageSrc, title, description, linkText, l
         />
       </div>
 
-      {/* Content */}
-      <div className="md:w-1/2 text-center md:text-left">
+      {/* Content Section */}
+      <div
+        className={`md:w-1/2 flex flex-col ${
+          reverse ? "items-start text-left" : "items-start text-left"
+        }`}
+      >
+        {/* Title close to the image */}
         <h2 className="text-3xl font-bold text-[#00464d] mb-4">{title}</h2>
-        <p className="text-base text-gray-600 font-medium leading-relaxed mb-6">{description}</p>
+        {/* Description */}
+        <p className="text-base text-gray-600 text-justify font-medium leading-relaxed mb-6">
+          {description}
+        </p>
+        {/* Link */}
         <a
           href={linkHref}
           className="text-xs text-[#00464d] font-bold hover:underline inline-flex items-center"
