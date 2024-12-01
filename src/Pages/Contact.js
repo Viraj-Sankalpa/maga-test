@@ -130,7 +130,7 @@ export default function Contact() {
             >
               <motion.input
                 type="text"
-                placeholder="Username"
+                placeholder="Your Name"
                 className="w-full px-4 py-2 rounded-lg bg-transparent border border-white text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-teal-200"
                 variants={itemVariant}
               />
