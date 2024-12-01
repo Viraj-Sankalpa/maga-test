@@ -27,15 +27,15 @@ export default function Header() {
   };
 
   return (
-    <header className=" bg-transparent fixed h-16 top-0 left-0 mb-4 w-full z-50">
+    <header className=" bg-[#00464d] fixed h-16 top-0 left-0 mb-4 w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Company Logo */}
+        {/* Maga Logo */}
         <div className="relative left-1/2 transform -translate-x-1/2">
           <Link to="home" smooth={true} duration={500}>
             <Image
-              src="/images/logo/Maga-Logo.png"
+              src="/images/logo/Maga-Logo-white.png"
               width={100}
-              height={100}
+              height={150}
               alt="Company Logo"
               className="h-10 cursor-pointer"
             />
@@ -49,17 +49,17 @@ export default function Header() {
           aria-label="Toggle Menu"
         >
           <div
-            className={`h-1 w-8 bg-[#00464d] rounded transition-transform duration-300 ${
+            className={`h-1 w-8 bg-white rounded transition-transform duration-300 ${
               menuOpen ? "rotate-45 translate-y-2.5" : ""
             }`}
           ></div>
           <div
-            className={`h-1 w-8 bg-[#00464d] rounded transition-opacity duration-300 ${
+            className={`h-1 w-8 bg-white rounded transition-opacity duration-300 ${
               menuOpen ? "opacity-0" : ""
             }`}
           ></div>
           <div
-            className={`h-1 w-8 bg-[#00464d] rounded transition-transform duration-300 ${
+            className={`h-1 w-8 bg-white rounded transition-transform duration-300 ${
               menuOpen ? "-rotate-45 -translate-y-2.5" : ""
             }`}
           ></div>
