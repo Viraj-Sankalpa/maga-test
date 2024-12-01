@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <header className=" bg-[#00474d7c] fixed top-0 left-0 w-full z-50">
+    <header className=" bg-white fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Company Logo */}
         <div className="relative left-1/2 transform -translate-x-1/2">
