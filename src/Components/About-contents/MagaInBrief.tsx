@@ -24,7 +24,7 @@ export default function MagaInBrief() {
   }, [inView1Trigger, inView2Trigger, inView3Trigger]);
 
   return (
-    <section className="min-h-screen text-[#00464d] bg-transparent">
+    <section className="min-h-screen text-white bg-[#00464d]">
       <section className="py-10 px-6">
         <motion.div
           className="container mx-auto text-center max-w-4xl"
@@ -32,7 +32,7 @@ export default function MagaInBrief() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-bold text-[#00464d] ml-4 my-2 inline-block relative">
+          <h2 className="text-5xl font-bold text-[#F0F0F0] ml-4 my-2 inline-block relative">
             About <span className="text-blue-600">Us</span>
             <span className="absolute left-0 bottom-[-8px] w-full h-[2px] bg-blue-600"></span>
           </h2>
@@ -52,15 +52,16 @@ export default function MagaInBrief() {
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
           >
-            <h2 className="text-4xl font-bold">Maga in Brief</h2>
-            <p className="text-lg text-white leading-relaxed">
+            <h2 className="text-4xl text-[#F0F0F0] font-bold pb-4">Maga in Brief</h2>
+            <p className="text-lg text-[#D9D9D9] leading-relaxed">
               Since its establishment in 1984, Maga has been an active
               participant in the construction industry in Sri Lanka, making a
               significant contribution to its development by applying the
               knowledge and experience gained through working with international
               construction companies.
+              <br/>
             </p>
-            <p className="text-lg text-white leading-relaxed">
+            <p className="text-lg text-[#D9D9D9] leading-relaxed">
               Today, Maga has made an indelible imprint as the market leader and
               a model construction company of the country. It has provided
               leadership to Sri Lanka’s construction industry by achieving
@@ -73,9 +74,9 @@ export default function MagaInBrief() {
               company to win the National Green Award. The Institution of
               Engineers Sri Lanka honoured the company with its first ever
               Engineering Excellence Award (for Infrastructure Development) in
-              2008.
+              2008. <br/>
             </p>
-            <p className="text-lg text-white leading-relaxed">
+            <p className="text-lg text-[#D9D9D9] leading-relaxed">
               Maga has won a record 90 National Construction Awards from the
               Construction Industry Development Authority (CIDA). The company
               won the prestigious International Federation of Asian and Western
@@ -87,9 +88,9 @@ export default function MagaInBrief() {
               Anuradhapura to Tincomalee. The company has also completed the
               longest recent road rehabilitation project, the 158km long
               Matara–Wellawaya Road, which was delivered ahead-of-schedule
-              garnering the praise of the European Union.
+              garnering the praise of the European Union. <br/>
             </p>
-            <p className="text-lg text-white leading-relaxed">
+            <p className="text-lg text-[#D9D9D9] leading-relaxed">
               Maga retains its Platinum rating and number 4 ranking in the Sri
               Lanka’s Corporate Accountability Index since 2016, in recognition
               of its sustainable construction practices and continuous
@@ -113,8 +114,8 @@ export default function MagaInBrief() {
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
           >
-            <h2 className="text-4xl font-bold">Vision</h2>
-            <p className="text-lg text-white leading-relaxed">
+            <h2 className="text-4xl text-[#F0F0F0] font-bold">Vision</h2>
+            <p className="text-lg text-[#D9D9D9] leading-relaxed">
               To be the most competitive construction firm in Sri Lanka.
             </p>
           </motion.div>
@@ -130,8 +131,8 @@ export default function MagaInBrief() {
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
           >
-            <h2 className="text-4xl font-bold">Mission</h2>
-            <p className="text-lg text-white leading-relaxed pb-16">
+            <h2 className="text-4xl text-[#F0F0F0] font-bold">Mission</h2>
+            <p className="text-lg text-[#D9D9D9] leading-relaxed pb-16">
               Maga is driven by excellence and is committed to ensure the
               satisfaction of customer needs with utmost care by constantly
               providing quality products and services at affordable prices.
@@ -153,7 +154,7 @@ export default function MagaInBrief() {
               src={currentImage}
               alt="Dynamic Content"
               width={500}
-              height={500}
+              height={600}
               className="object-contain rounded-lg shadow-lg"
             />
           </motion.div>
